@@ -583,7 +583,7 @@ const MentorSection = ({ setActivePage }) => (
             <div className="rounded-[3rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border-8 border-white aspect-[4/5] lg:aspect-auto cursor-pointer" onClick={() => setActivePage('mentor')}>
               <img 
                 src="https://i.postimg.cc/xC5YYx2b/ttrseuasus.png" /* EDIT FOTO MENTOR (MINI) DI SINI */
-                alt="Adhwaneisya - Lead Mentor" 
+                alt="Adhwa Neisya - Lead Mentor" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
@@ -618,7 +618,7 @@ const MentorSection = ({ setActivePage }) => (
             Dibimbing Langsung Oleh <span className="text-orange-500 italic">Expert</span> di Bidangnya
           </h2>
           <p className="text-gray-500 text-lg mb-8 leading-relaxed">
-            Adhwaneisya adalah Lead Consultant Finensia yang telah menangani lebih dari 50+ klien UMKM hingga korporasi. Beliau percaya bahwa akuntansi harus menjadi alat bantu pertumbuhan.
+            Adhwa neisya adalah Lead Consultant Finensia yang telah menangani lebih dari 50+ klien UMKM hingga korporasi. Beliau percaya bahwa akuntansi harus menjadi alat bantu pertumbuhan.
           </p>
           <div className="flex flex-wrap gap-4">
             <button onClick={() => setActivePage('mentor')} className="bg-[#001F3F] text-white px-8 py-4 rounded-2xl font-black text-sm flex items-center gap-3 hover:bg-orange-500 transition-all shadow-xl">
@@ -756,7 +756,7 @@ const PriceCard = ({ title, type, price, discount, features, isPro }) => (
       className={`block text-center w-full py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all ${isPro ? 'bg-[#FF8C00] text-white shadow-xl shadow-orange-500/30' : 'bg-[#001F3F] text-white hover:bg-orange-500'}`}
     >
       Daftar Sekarang
-    </a>
+    </a> 
   </motion.div>
 );
 
@@ -768,6 +768,7 @@ const AcademySection = () => {
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          {/* --- EDIT LINK DAFTAR PROFESIONAL DI SINI --- */}
           <PriceCard 
             title="Professional Accounting" 
             type="Lulusan Baru / Pencari Kerja"
@@ -775,7 +776,11 @@ const AcademySection = () => {
             discount="1.200.000"
             features={proFeatures}
             isPro={true}
+            link="https://adhwaneisya-accounting.myr.id/bundling/professional-accounting-program-95899" 
           />
+          {/* --------------------------------------------- */}
+
+          {/* --- EDIT LINK DAFTAR INTENSIVE DI SINI --- */}
           <PriceCard 
             title="Accounting Intensive" 
             type="Mahasiswa / Tingkat Pemula"
@@ -783,7 +788,9 @@ const AcademySection = () => {
             discount="600.000"
             features={basicFeatures}
             isPro={false}
+            link="https://adhwaneisya-accounting.myr.id/bundling/Accounting-Intensive-Program" 
           />
+          {/* ------------------------------------------- */}
         </div>
       </div>
     </section>
