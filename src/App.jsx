@@ -913,7 +913,7 @@ const Footer = () => (
           <div>
             <h4 className="font-black text-xs uppercase tracking-[0.2em] text-orange-500 mb-8">Lokasi</h4>
             <p className="text-blue-100/50 text-sm font-bold leading-relaxed">
-              Sudirman Central Business District (SCBD)<br/>Jakarta Selatan, Indonesia
+              Cirebon (Cirebon city)<br/>Jawa Barat, Indonesia
             </p>
           </div>
         </div>
@@ -921,7 +921,7 @@ const Footer = () => (
       
       <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-blue-100/20">
         <div className="flex items-center gap-2">
-          <Lock size={12} className="text-green-500" /> © 2024 FINENSIA INDONESIA GROUP. SECURED PLATFORM.
+          <Lock size={12} className="text-green-500" /> © 2025 FINENSIA. SECURED PLATFORM.
         </div>
         <div className="flex gap-10">
           <span className="hover:text-white cursor-pointer">Kebijakan Privasi</span>
