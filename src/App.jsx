@@ -597,7 +597,7 @@ const MentorSection = ({ setActivePage }) => (
                   <Award size={24} />
                 </div>
                 <div>
-                  <div className="text-[#001F3F] font-black text-lg">Adhwaneisya</div>
+                  <div className="text-[#001F3F] font-black text-lg">Adhwa Neisya</div>
                   <div className="text-gray-400 text-xs font-bold uppercase tracking-widest">Lead Consultant & Mentor</div>
                 </div>
               </div>
@@ -750,7 +750,7 @@ const PriceCard = ({ title, type, price, discount, features, isPro }) => (
     </div>
 
     <a 
-      href="https://wa.me/message/4LTAXUDIFW75B1"
+      href={link}
       target="_blank"
       rel="noopener noreferrer"
       className={`block text-center w-full py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all ${isPro ? 'bg-[#FF8C00] text-white shadow-xl shadow-orange-500/30' : 'bg-[#001F3F] text-white hover:bg-orange-500'}`}
