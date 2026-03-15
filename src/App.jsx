@@ -962,7 +962,7 @@ export default function App() {
                   transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
                   className="flex whitespace-nowrap gap-24 items-center"
                 >
-                  {["ARABHASATA", "NAMMI FASHION", "BILIK KITA", "SERA COFFEE", "JAYA MOTOR", "CV. BERKARYA SATU", "MB CORP", "SENIMA PRINT"].map((c, i) => (
+                  {["ARABHASATA", "HANABEE", "ALAMOOI","NAMMI FASHION", " HOUSE OF BEE", "BILIK KITA", "SERA COFFEE", "JAYA MOTOR", "CV. BERKARYA SATU", "MB CORP", "SENIMA PRINT"].map((c, i) => (
                     <span key={i} className="text-3xl font-black text-gray-200 uppercase italic tracking-tighter hover:text-orange-500 transition-colors">{c}</span>
                   ))}
                 </motion.div>
