@@ -534,10 +534,10 @@ const QuoteSection = () => (
 
 const BentoServices = () => {
   const items = [
-    { title: "Profit & Loss", icon: <PieChart />, color: "bg-orange-500", size: "lg:col-span-2" },
-    { title: "Cash Flow", icon: <RefreshCw />, color: "bg-blue-600", size: "lg:col-span-1" },
-    { title: "Tax Strategy", icon: <ShieldCheck />, color: "bg-emerald-500", size: "lg:col-span-1" },
-    { title: "Business Audit", icon: <Search />, color: "bg-purple-600", size: "lg:col-span-2" }
+    { title: "Profit & Loss", desc: "Penyusunan laporan laba rugi bulanan untuk memantau performa bisnis secara akurat.", icon: <PieChart />, color: "bg-orange-500", size: "lg:col-span-2" },
+    { title: "Cash Flow", desc: "Manajemen arus kas untuk memastikan likuiditas operasional tetap terjaga.", icon: <RefreshCw />, color: "bg-blue-600", size: "lg:col-span-1" },
+    { title: "Tax Strategy", desc: "Perencanaan pajak cerdas untuk efisiensi beban pajak sesuai regulasi.", icon: <ShieldCheck />, color: "bg-emerald-500", size: "lg:col-span-1" },
+    { title: "Business Audit", desc: "Evaluasi sistem internal untuk mendeteksi risiko dan meningkatkan transparansi.", icon: <Search />, color: "bg-purple-600", size: "lg:col-span-2" }
   ];
 
   return (
@@ -557,7 +557,7 @@ const BentoServices = () => {
                 {item.icon}
               </div>
               <h3 className="text-2xl font-black text-[#001F3F] mb-4">{item.title}</h3>
-              <p className="text-gray-500 leading-relaxed">Layanan mendalam untuk memastikan setiap aspek keuangan bisnis Anda terpantau dengan standar akuntansi global.</p>
+              <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -583,7 +583,7 @@ const MentorSection = ({ setActivePage }) => (
             <div className="rounded-[3rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border-8 border-white aspect-[4/5] lg:aspect-auto cursor-pointer" onClick={() => setActivePage('mentor')}>
               <img 
                 src="https://i.postimg.cc/xC5YYx2b/ttrseuasus.png" /* EDIT FOTO MENTOR (MINI) DI SINI */
-                alt="Adhwa Neisya - Lead Mentor" 
+                alt="Adhwaneisya - Lead Mentor" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
@@ -597,7 +597,7 @@ const MentorSection = ({ setActivePage }) => (
                   <Award size={24} />
                 </div>
                 <div>
-                  <div className="text-[#001F3F] font-black text-lg">Adhwa Neisya</div>
+                  <div className="text-[#001F3F] font-black text-lg">Adhwaneisya</div>
                   <div className="text-gray-400 text-xs font-bold uppercase tracking-widest">Lead Consultant & Mentor</div>
                 </div>
               </div>
@@ -618,7 +618,7 @@ const MentorSection = ({ setActivePage }) => (
             Dibimbing Langsung Oleh <span className="text-orange-500 italic">Expert</span> di Bidangnya
           </h2>
           <p className="text-gray-500 text-lg mb-8 leading-relaxed">
-            Adhwa neisya adalah Lead Consultant Finensia yang telah menangani lebih dari 50+ klien UMKM hingga korporasi. Beliau percaya bahwa akuntansi harus menjadi alat bantu pertumbuhan.
+            Adhwaneisya adalah Lead Consultant Finensia yang telah menangani lebih dari 50+ klien UMKM hingga korporasi. Beliau percaya bahwa akuntansi harus menjadi alat bantu pertumbuhan.
           </p>
           <div className="flex flex-wrap gap-4">
             <button onClick={() => setActivePage('mentor')} className="bg-[#001F3F] text-white px-8 py-4 rounded-2xl font-black text-sm flex items-center gap-3 hover:bg-orange-500 transition-all shadow-xl">
@@ -718,7 +718,7 @@ const ProgramIntro = () => (
   </section>
 );
 
-const PriceCard = ({ title, type, price, discount, features, isPro }) => (
+const PriceCard = ({ title, type, price, discount, features, isPro, link = "#" }) => (
   <motion.div 
     whileHover={{ y: -15 }}
     className={`relative p-10 md:p-14 rounded-[3.5rem] overflow-hidden ${isPro ? 'bg-[#001F3F] text-white ring-4 ring-orange-500/20' : 'bg-white text-[#001F3F] border border-gray-100 shadow-xl'}`}
@@ -756,7 +756,7 @@ const PriceCard = ({ title, type, price, discount, features, isPro }) => (
       className={`block text-center w-full py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all ${isPro ? 'bg-[#FF8C00] text-white shadow-xl shadow-orange-500/30' : 'bg-[#001F3F] text-white hover:bg-orange-500'}`}
     >
       Daftar Sekarang
-    </a> 
+    </a>
   </motion.div>
 );
 
@@ -870,7 +870,7 @@ const GoalsSection = () => (
       <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto">Wujudkan impian bisnis yang terukur dan terkendali bersama tim ahli Finensia.</p>
       <a 
         href="https://wa.me/message/4LTAXUDIFW75B1" 
-        target="_blank"
+        target="_blank" 
         rel="noopener noreferrer"
         className="inline-block bg-[#001F3F] text-white px-12 py-6 rounded-3xl font-black text-xl hover:scale-105 transition-all shadow-2xl"
       >
@@ -888,7 +888,6 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-start gap-20 mb-20">
         <div className="max-w-md">
           <div className="flex items-center gap-3 mb-8">
-            {/* Logo Footer diperbaiki dan ditandai untuk edit manual */}
             <img 
               src="https://i.postimg.cc/7L4GPZcq/Finensia-logo.jpg" /* EDIT LOGO FOOTER DI SINI */
               alt="Finensia Logo Footer" 
@@ -919,16 +918,18 @@ const Footer = () => (
           </div>
           <div>
             <h4 className="font-black text-xs uppercase tracking-[0.2em] text-orange-500 mb-8">Lokasi</h4>
+            {/* --- EDIT ALAMAT DI SINI --- */}
             <p className="text-blue-100/50 text-sm font-bold leading-relaxed">
               Cirebon (Cirebon city)<br/>Jawa Barat, Indonesia
             </p>
+            {/* --------------------------- */}
           </div>
         </div>
       </div>
       
       <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-blue-100/20">
         <div className="flex items-center gap-2">
-          <Lock size={12} className="text-green-500" /> © 2025 FINENSIA. SECURED PLATFORM.
+          <Lock size={12} className="text-green-500" /> © 2024 FINENSIA INDONESIA GROUP. SECURED PLATFORM.
         </div>
         <div className="flex gap-10">
           <span className="hover:text-white cursor-pointer">Kebijakan Privasi</span>
@@ -948,12 +949,10 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [activePage]);
 
-  return (
-    <div className="min-h-screen bg-white font-sans text-[#001F3F] selection:bg-orange-100 selection:text-orange-900">
-      <Navbar activePage={activePage} setActivePage={setActivePage} />
-
-      <main>
-        {activePage === 'home' && (
+  const renderPage = () => {
+    switch(activePage) {
+      case 'home':
+        return (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             <Hero setActivePage={setActivePage} />
             <section className="py-20 bg-white border-y border-gray-100">
@@ -973,9 +972,9 @@ export default function App() {
             <SecurityTrustSection />
             <FAQSection />
           </motion.div>
-        )}
-
-        {activePage === 'services' && (
+        );
+      case 'services':
+        return (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             <ServicesHero />
             <QuoteSection />
@@ -985,9 +984,9 @@ export default function App() {
             <ServiceDetails />
             <GoalsSection />
           </motion.div>
-        )}
-
-        {activePage === 'academy' && (
+        );
+      case 'academy':
+        return (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             <AcademyHeader />
             <ProgramIntro />
@@ -995,15 +994,15 @@ export default function App() {
             <SecurityTrustSection />
             <AcademyCTA />
           </motion.div>
-        )}
-
-        {activePage === 'mentor' && (
+        );
+      case 'mentor':
+        return (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             <MentorProfilePage setActivePage={setActivePage} />
           </motion.div>
-        )}
-
-        {activePage === 'contact' && (
+        );
+      case 'contact':
+        return (
           <div className="pt-48 pb-32 bg-gray-50 min-h-screen flex items-center justify-center">
             <div className="container mx-auto px-6 max-w-2xl text-center">
               <motion.div
@@ -1033,11 +1032,19 @@ export default function App() {
               </motion.div>
             </div>
           </div>
-        )}
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-white font-sans text-[#001F3F] selection:bg-orange-100 selection:text-orange-900">
+      <Navbar activePage={activePage} setActivePage={setActivePage} />
+      <main>
+        {renderPage()}
       </main>
-
       <Footer />
-
       {/* Floating Action Button */}
       <motion.a 
         initial={{ scale: 0 }}
