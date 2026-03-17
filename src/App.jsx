@@ -228,7 +228,7 @@ const MentorProfilePage = ({ setActivePage }) => {
               <span className="inline-block bg-orange-500/20 text-orange-400 px-4 py-1 rounded-full text-xs font-black tracking-widest uppercase mb-6">Expert Accounting Consultant</span>
               <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">Hai, saya <span className="text-[#FF8C00]">Adhwa Neisya</span></h1>
               <p className="text-blue-100/70 text-xl leading-relaxed mb-8">
-                Saya adalah seorang profesional akuntansi yang terbiasa membangun dan menata sistem keuangan dari nol, baik untuk bisnis kecil, startup, maupun perusahaan skala besar.
+                Di balik Finensia, saya mendedikasikan keahlian saya untuk membantu pelaku bisnis dan calon akuntan memahami dunia keuangan tanpa rasa takut. Dengan pengalaman praktis di bidang akuntansi dan pajak, misi saya adalah memberikan strategi yang akurat, transparan, dan mudah diterapkan agar bisnis Anda bisa tumbuh dengan fondasi keuangan yang kuat.
               </p>
               <div className="p-8 bg-white/5 backdrop-blur-md border border-white/10 rounded-[2.5rem] italic text-2xl font-medium leading-snug">
                 “Bagi saya, akuntansi bukan cuma soal angka. Tapi soal sistem yang bikin bisnis bertahan & berkembang.”
