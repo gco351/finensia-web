@@ -356,7 +356,7 @@ const MentorProfilePage = ({ setActivePage }) => {
                 onClick={() => setActivePage('services')}
                 className="bg-[#FF8C00] text-white px-10 py-5 rounded-2xl font-black hover:scale-105 transition-all shadow-xl shadow-orange-500/20 flex items-center gap-3"
               >
-                Lihat Jasa & Pajak <ArrowRight size={20} />
+                Lihat Solusi Pajak Aman, Bisnis Tenang <ArrowRight size={20} />
               </button>
               <a 
                 href="https://wa.me/message/4LTAXUDIFW75B1"
